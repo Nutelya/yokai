@@ -1,0 +1,47 @@
+body {
+  background-color: brown;
+}
+nav {
+  height: 60px;
+  padding-top: 10px;
+  border-style: ridge;
+  border-width: 0.4px;
+  background: rgba(0,0,0,0.2);
+}
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.container {
+}
+
+#slider {
+  height: 650px;
+}
+
+#item1 {
+  background-color:  #085B87;
+  height: 400px;
+}
+
+a {
+  color: black;
+}
+
+.textlien {
+  padding-top: 8px;
+}
+
+#logo {
+  height: 44px;
+}
+
+.slidershow {
+  position: absolute;
+  top : 0;
+  z-index: -1;
+  width: 100%;
+  height: 650px;
+}
