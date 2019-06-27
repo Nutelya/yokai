@@ -18,11 +18,11 @@
       <div class="row">
         <div class="col-md-12" id="slider">
           <nav class="row">
-                <a href="#" class="col-md-1 offset-md-2" ><img src="/yokai/public/images/yokainew.png" alt="logo yokai" id="logo" /></a>
+                <a href="/yokai/index.php" class="col-md-1 offset-md-2" ><img src="/yokai/public/images/yokainew.png" alt="logo yokai" id="logo" /></a>
                 <a href="#" class="col-md-1 textlien">Actualités</a>
                 <a href="#" class="col-md-1 textlien">Jeux</a>
                 <a href="#" class="col-md-1 offset-md-4 textlien">Contact</a>
-                <a href="#" class="col-md-2 textlien">Mon compte</a>
+                <a href="/yokai/index.php?action=administration" class="col-md-2 textlien">Mon compte</a>
           </nav>
           <div class=row>
           </div>
