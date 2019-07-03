@@ -5,7 +5,8 @@ $db = \yokai\model\Dbfactory::getMysqlConnexionWithPDO();
 $managerJeu = new \yokai\model\jeu\managerJeuPDO($db);
 $managerUpload = new \yokai\model\upload\managerUploadPDO();
 
-function accueil() {
+function accueil($managerJeu) {
+	$listeJeu = $managerJeu->list();
 	require('../yokai/view/frontend/accueil.php');
 }
 
@@ -33,7 +34,7 @@ function ajoutJeu ($managerJeu,$managerUpload) {
 			$jeu = new \yokai\model\jeu\Jeu(
 			[
 				'nom' => htmlspecialchars($_POST['nom']),
-				'image' => htmlspecialchars($nomImage)
+				'image' => htmlspecialchars($image->cible().$image->nom())
 			]
 			);
 			$managerJeu->add($jeu);

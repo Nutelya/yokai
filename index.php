@@ -18,5 +18,5 @@ if (isset($_GET['action']))
 }
 else
 {
-	accueil();
+	accueil($managerJeu);
 }
