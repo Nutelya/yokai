@@ -15,6 +15,15 @@ if (isset($_GET['action']))
 	else if ($_GET['action'] == 'ajoutJeu') {
 		ajoutJeu($managerJeu,$managerUpload);
 	}
+	else if ($_GET['action'] == 'listeJeu') {
+		listeJeu($managerJeu);
+	}
+	else if ($_GET['action'] == 'listeArticle') {
+		listeArticle($managerArticle);
+	}
+	else if ($_GET['action'] == 'article') {
+		article($managerArticle,$managerUpload);
+	}
 }
 else
 {

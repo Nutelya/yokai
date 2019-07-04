@@ -46,13 +46,18 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-fw fa-sticky-note"></i>
-            <span>Jeux</span>
+            <span>Apparances</span>
           </a>
           <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <h6 class="dropdown-header">Gestion des jeux</h6>
-            <a class="dropdown-item" href="../yokai/index.php?action=ajoutJeu">Ajouter un jeu</a>
-            <a class="dropdown-item" href="../yokai/index.php?action=billetListeAdmin">Liste des jeux</a>
+            <h6 class="dropdown-header">Apparances</h6>
+            <a class="dropdown-item" href="../yokai/index.php?action=listeJeu">Jeux</a>
           </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="../yokai/index.php?action=listeArticle">
+            <i class="fas fa-fw fa-home"></i>
+            <span>Articles</span></a>
         </li>
 
         <li class="nav-item">
@@ -67,7 +72,7 @@
         <footer class="sticky-footer">
           <div class="container my-auto">
             <div class="copyright text-center my-auto">
-              <span>Copyright © Blog de Jean Forteroche</span>
+              <span>Copyright © Site de Yokai</span>
             </div>
           </div>
         </footer>

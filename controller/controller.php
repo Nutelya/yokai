@@ -4,6 +4,7 @@ namespace yokai\controller;
 $db = \yokai\model\Dbfactory::getMysqlConnexionWithPDO();
 $managerJeu = new \yokai\model\jeu\managerJeuPDO($db);
 $managerUpload = new \yokai\model\upload\managerUploadPDO();
+$managerArticle = new \yokai\model\article\managerArticlePDO($db);
 
 function accueil($managerJeu) {
 	$listeJeu = $managerJeu->list();
@@ -42,4 +43,21 @@ function ajoutJeu ($managerJeu,$managerUpload) {
 		
 	}
 	require('../yokai/view/backend/ajoutJeu.php');
+}
+
+function listeJeu ($managerJeu) {
+	$listeJeu = $managerJeu->list();
+	require('../yokai/view/backend/listeJeu.php');
+}
+
+function listeArticle ($managerArticle) {
+	if (isset($_GET['supprimer'])) {
+		$managerArticle->delete($_GET['supprimer']);
+	}
+	$listeArticle = $managerArticle->list();
+	require('../yokai/view/backend/listeArticle.php');
+}
+
+function article ($managerArticle, $managerUpload) {
+	require('../yokai/view/backend/article.php');
 }
